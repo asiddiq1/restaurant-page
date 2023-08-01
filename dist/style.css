@@ -1,0 +1,172 @@
+body{ 
+    background: url(images/rest-img.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.title{
+    color: white;
+    font-family: cursive;
+    font-size: 2.5rem;
+
+
+}
+
+.navbar{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar button{
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: white; 
+    padding: 10px 10px;
+    border: none;
+}
+
+.navbar button:hover{
+    cursor: pointer;
+    transform: translate(0, -5px);
+    transition: ease 0.5s;
+}
+
+button.active{
+    border-bottom: 1px solid white;
+}
+
+#main{
+    color: black;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: "Times New Roman", 'sans-sherif';
+    padding: 2rem;
+ 
+}
+
+.main-img{
+    border-radius: 1rem;
+    height: 15rem;
+    width: 18rem;
+
+}
+
+#menu{
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(300px, 1fr) );
+    gap: 2rem;
+    animation: fadeIn 1.5s;
+}
+
+#home{
+    animation: fadeIn 1.5s;
+
+}
+
+#contact{
+    animation: fadeIn 1.5s;
+}
+
+#menu .item img{
+    height: 100px;
+    width: 100px;
+}
+
+.item{
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "Times New Roman", 'sans-sherif';
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:hover{
+    cursor: pointer;
+    background-color: rgba(137, 131, 129, 0.4);
+    transition: ease 0.5s;
+
+
+}
+
+.item h3{
+    margin: 0;
+}
+
+.item p{
+    font-size: 1rem;
+}
+
+#contact p{
+    margin-top: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+@media screen and (max-width: 650px) {
+    #main{
+        width: 20rem;
+    }
+    .location{
+        width: 20rem;
+    }
+    #contact{
+        font-size: 14px;
+    }
+    
+}
+
+#contact{
+    padding: 0;
+    text-align: left;
+}
+
+#contact i{
+    font-size: 1rem;
+}
+
+.footer{
+    height: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer i{
+    color: white;
+}
