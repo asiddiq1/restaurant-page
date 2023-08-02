@@ -9,7 +9,7 @@ function createHome(){
     secondP.textContent = "Made with high-quality ingredients";
    
     const mainImg = document.createElement("img");
-    mainImg.src = "images/sushi-bar.jpeg";
+    mainImg.src = "images/sushi-main.jpeg";
     mainImg.className = "main-img";
 
     const thirdP = document.createElement("p");
